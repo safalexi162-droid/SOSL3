@@ -28,6 +28,17 @@
   </li>
         <li><a href ="/contact" class="hover:text-yellow-300">CONCTACT</a></li>
 
+        <li class="relative group">
+        <li><a href ="#" class="hover:text-yellow-300">TRANSLET<span>🔽</span></a></li>   
+        <ul class="hidden group-hover:block absolute bg-white text-green-900 rounded shadow w-48 mt-2 z-50">
+  <il><a href="/northern" class="block px-4 py-2 hover:bg-green-700">FRENCH</a></il>
+  <il><a href="/southern" class="block px-4 py-2 hover:bg-green-700">KINYARWNDA</a></il>
+  <il><a href="/kigalicity" class="block px-4 py-2 hover:bg-green-700">SPANISH</a></il>
+  <il><a href="/eastern" class="block px-4 py-2 hover:bg-green-700">ITAILANA</a></il>
+
+  </ul>
+  </li>  
+
 
     </ul>
     </nav>

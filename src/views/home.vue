@@ -1,143 +1,63 @@
-<!-- HomePage.vue -->
-
 <template>
-  <section class="home">
-
-    <!-- Dark Overlay -->
-    <div class="overlay">
-
-      <!-- Hero Content -->
-      <div class="content">
-
-        <h1>Tembera U Rwanda</h1>
-
-        <h2>Discover The Beauty Of Rwanda</h2>
-
-        <p>
-          Tembera U Rwanda is a tourism and travel platform created
-          to showcase the beauty, culture, wildlife, and breathtaking
-          destinations of Rwanda. From the famous mountain gorillas
-          of Volcanoes National Park to the relaxing beaches of Lake
-          Kivu, Rwanda offers unforgettable adventures for every traveler.
-        </p>
-
-        <p>
-          Our mission is to help visitors explore Rwanda’s natural beauty,
-          rich traditions, modern cities, and unique tourism experiences.
-          Whether you love nature, culture, adventure, or photography,
-          Rwanda is the perfect destination to discover.
-        </p>
-
-        <button>
-          Explore Rwanda
-        </button>
-
-      </div>
-
+  <div class="home">
+    <h1>Welcome to Rwanda</h1>
+    <p>The land of a thousand hills</p>
+    
+    <div class="cards">
+      <router-link to="/products" class="card">Explorer place</router-link>
+      <router-link to="/dashboard" class="card">Learn More</router-link>
     </div>
-
-  </section>
+    <p>
+          Welcome to RWANDA where your dreams becomes reality where you enjoye the beautifull
+          sun rise of the universe😉 whith the peacefull  vide and carement which you can't find on any other place in the wolrd 🌎
+        </p>
+  </div>
 </template>
 
-<script setup>
-// No JavaScript needed
-</script>
-
 <style scoped>
-
-
 .home {
-  height: 100vh;
+  min-height: 100vh;
 
-  
-  background-image: url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5");
+  background-image:url('/src/assets/kg2.jpg');
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-
-.overlay {
-  width: 100%;
-  height: 100%;
-
-  background: rgba(0, 0, 0, 0.6);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  padding: 40px;
-}
-
-
-.content {
-  max-width: 900px;
-
+.home {
   text-align: center;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+}
+.home h1 {
+  font-size: 3rem;
+  color: #222;
+}
+.home p {
+  font-size: 1.3rem;
+  color: rgb(255, 235, 235)aea;
+  margin: 20px 0 40px;
+}
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: #f0a500;
   color: white;
-}
-
-
-.content h1 {
-  font-size: 70px;
-  color: gold;
-  margin-bottom: 10px;
-}
-
-.content h2 {
-  font-size: 40px;
-  margin-bottom: 30px;
-}
-
-/* PARAGRAPHS */
-.content p {
-  font-size: 22px;
-  line-height: 1.8;
-
-  margin-bottom: 25px;
-}
-
-/* BUTTON */
-button {
-  padding: 18px 40px;
-
-  border: none;
-  border-radius: 10px;
-
-  background: gold;
-  color: black;
-
-  font-size: 20px;
+  text-decoration: none;
+  border-radius: 8px;
   font-weight: bold;
-
-  cursor: pointer;
+  font-size: 1.1rem;
   transition: 0.3s;
 }
-
-button:hover {
-  background: white;
+.card:hover {
+  background-color: #d48a00;
+  transform: translateY(-5px);
 }
-
-/* MOBILE RESPONSIVE */
-@media (max-width: 768px) {
-
-  .content h1 {
-    font-size: 45px;
-  }
-
-  .content h2 {
-    font-size: 28px;
-  }
-
-  .content p {
-    font-size: 18px;
-  }
-
-  button {
-    width: 100%;
-  }
-}
-
 </style>
