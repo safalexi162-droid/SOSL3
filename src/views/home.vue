@@ -1,13 +1,13 @@
 <template>
   <div class="home">
-    <h1>Welcome to Rwanda</h1>
-    <p>The land of a thousand hills</p>
+    <h1 class="text-white">Welcome to Rwanda</h1>
+    <p class="text-white">The land of a thousand hills</p>
     
     <div class="cards">
       <router-link to="/products" class="card">Explorer place</router-link>
       <router-link to="/dashboard" class="card">Learn More</router-link>
     </div>
-    <p>
+    <p class="text-white">
           Welcome to RWANDA where your dreams becomes reality where you enjoye the beautifull
           sun rise of the universe😉 whith the peacefull  vide and carement which you can't find on any other place in the wolrd 🌎
         </p>
@@ -18,7 +18,7 @@
 .home {
   min-height: 100vh;
 
-  background-image:url('/src/assets/kg2.jpg');
+  background-image:url('/src/assets/kg1.jpg');
 
   background-size: cover;
   background-position: center;
@@ -29,10 +29,11 @@
   text-align: center;
   padding: 60px 20px;
   font-family: Arial, sans-serif;
+  
 }
 .home h1 {
   font-size: 3rem;
-  color: #222;
+  color: #f2e0e0;
 }
 .home p {
   font-size: 1.3rem;
