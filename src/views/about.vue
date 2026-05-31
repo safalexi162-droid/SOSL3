@@ -1,125 +1,287 @@
 <template>
-  <section class="about">
+  <div class="about-page">
 
-    <div class="overlay">
+    <!-- Hero Section -->
+      <!-- Background Video -->
+      <video autoplay muted loop playsinline class="video-bg">
+        <source src="/src/assets/visit rwanda.mp4" />
+      </video>
+    <section class="hero">
+      <h1>About Rwanda</h1>
+      <p>
+        Discover the Heart of Africa and the Land of a Thousand Hills.
+      </p>
+    </section>
 
-      <div class="container">
+    <!-- History -->
+    <section class="section">
+      <h2>The History of Rwanda</h2>
 
-        <h1>About Tembera U Rwanda</h1>
+      <p>
+        Rwanda is a beautiful country located in East Africa. Known as
+        the "Land of a Thousand Hills," Rwanda has a rich history,
+        vibrant culture, and breathtaking natural beauty.
+      </p>
 
-        <p>
-          Tembera U Rwanda is a tourism platform that helps people
-          discover the beauty of Rwanda including mountains,
-          wildlife, culture, lakes, and national parks.
-        </p>
+      <p>
+        For centuries, Rwanda was home to thriving communities united
+        through culture, traditions, and strong leadership. Throughout
+        its history, Rwanda has demonstrated resilience and determination.
+        Today, Rwanda stands as one of Africa's fastest-growing nations,
+        recognized globally for cleanliness, security, innovation,
+        environmental conservation, and sustainable development.
+      </p>
 
-        <div class="cards">
+      <p>
+        Modern Rwanda continues to inspire visitors through its remarkable
+        transformation, peaceful environment, and welcoming people.
+      </p>
+    </section>
 
-          <div class="card">
-            <h2>🌍 Our Mission</h2>
+    
+    
+      <h2>Leadership of Rwanda</h2>
 
-            <p>
-              To promote tourism and showcase Rwanda to the world.
-            </p>
+      
+        <img src="/src/assets/paul kagame.jpg" 
+        alt="President">
+     
+
+        <div></div>
+
+      <p>
+        Rwanda's leadership has played an important role in promoting
+        national development, unity, education, technology, tourism,
+        environmental protection, and economic growth.
+      </p>
+    
+    <!-- Rwanda Video -->
+    <section class="section">
+      <h2>Explore Rwanda Through Video</h2>
+<video autoplay muted loop playsinline class="video-bg">
+        <source src="/src/assets/visit rwanda.mp4" />
+      </video>
+      <p>
+        Add a promotional tourism video showcasing Rwanda's landscapes,
+        wildlife, culture, cities, and national parks.
+      </p>
+    </section>
+
+    <!-- Tourism -->
+    <section class="section">
+      <h2>Why Visit Rwanda?</h2>
+
+      <p>
+        Rwanda offers unforgettable experiences for every traveler.
+        Whether you are seeking adventure, relaxation, wildlife,
+        photography, or cultural discovery, Rwanda has something unique
+        waiting for you.
+      </p>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>🦍 Gorilla Trekking</h3>
+          <p>
+            Visit Volcanoes National Park and encounter mountain gorillas
+            in their natural habitat.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🌋 Volcanoes</h3>
+          <p>
+            Explore the magnificent volcanic mountains and hiking trails.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🐘 Wildlife</h3>
+          <p>
+            Discover lions, elephants, giraffes, zebras, and many other
+            animals in Rwanda's national parks.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Beautiful Places -->
+    <section class="section">
+      <h2>Beautiful Places to Visit in Rwanda</h2>
+
+      <div class="gallery">
+
+        <
+          <img src="/src/assets/vc.jpg" 
+          alt="Volcanoes National Park">
+        
+
+        
+          <img src="/src/assets/aka.jpg" 
+          alt="Akagera National Park">
+        
+        
+          <img src="/src/assets/ny.jpg" 
+          alt="Nyungwe Forest">
           </div>
+        
 
-          <div class="card">
-            <h2>🦍 Wildlife</h2>
+      
 
-            <p>
-              Rwanda is famous for mountain gorillas and amazing
-              national parks.
-            </p>
-          </div>
+      <p>
+        Rwanda is home to some of Africa's most beautiful natural
+        attractions. Visitors can enjoy forests, mountains, lakes,
+        wildlife, waterfalls, and stunning landscapes.
+      </p>
+    </section>
 
-          <div class="card">
-            <h2>❤️ Culture</h2>
+    <!-- Lake Kivu -->
+    <section class="section">
+      <h2>Relax at Lake Kivu</h2>
 
-            <p>
-              Experience Rwanda’s traditions, people, music,
-              and hospitality.
-            </p>
-          </div>
+      <div class="gallery">
 
+        <div class="image-box">
+          📷 LAKE KIVU BEACH IMAGE
+        </div>
+
+        <div class="image-box">
+          📷 SUNSET AT LAKE KIVU
+        </div>
+
+        <div class="image-box">
+          📷 BOATS ON LAKE KIVU
         </div>
 
       </div>
 
-    </div>
+      <p>
+        Lake Kivu is one of Rwanda's most popular relaxation destinations.
+        Visitors enjoy beaches, swimming, boat rides, kayaking, resorts,
+        fishing experiences, and breathtaking sunsets.
+      </p>
 
-  </section>
+      <p>
+        Whether you are traveling with family, friends, or alone,
+        Lake Kivu offers peace, comfort, and unforgettable memories.
+      </p>
+    </section>
+
+    <!-- Culture -->
+    <section class="section">
+      <h2>Culture and Traditions</h2>
+
+      <p>
+        Rwanda is rich in cultural heritage. Visitors can enjoy traditional
+        dances, local cuisine, arts and crafts, storytelling, music, and
+        community experiences.
+      </p>
+
+      <div class="gallery">
+
+        <div class="image-box">
+          📷 CULTURAL DANCE IMAGE
+        </div>
+
+        <div class="image-box">
+          📷 RWANDAN ART IMAGE
+        </div>
+
+        <div class="image-box">
+          📷 TRADITIONAL CEREMONY IMAGE
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Closing -->
+    <section class="section closing">
+      <h2>Welcome to Rwanda</h2>
+
+      <p>
+        Rwanda is more than a destination. It is an experience filled
+        with adventure, culture, beauty, wildlife, and unforgettable
+        memories.
+      </p>
+
+      <p>
+        Whether you dream of seeing mountain gorillas, relaxing at Lake
+        Kivu, hiking volcanoes, exploring forests, or experiencing warm
+        hospitality, Rwanda welcomes you with open arms.
+      </p>
+
+      <h3>Tembera u Rwanda — Discover the Beauty of Rwanda.</h3>
+    </section>
+
+  </div>
 </template>
-
-<script setup>
-// No JavaScript needed
-</script>
 
 <style scoped>
 
-.about {
-  min-height: 100vh;
-
-  background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.overlay {
-  min-height: 100vh;
-
-  background: rgba(0,0,0,0.7);
-
-  padding: 50px 20px;
-}
-
-.container {
-  max-width: 1200px;
-  margin: auto;
-
-  text-align: center;
-  color: white;
-}
-
-.container h1 {
-  font-size: 60px;
-  color: gold;
-
-  margin-bottom: 30px;
-}
-
-.container p {
-  font-size: 22px;
+.about-page{
+  font-family: Arial, sans-serif;
   line-height: 1.8;
-
-  margin-bottom: 40px;
 }
 
-.cards {
-  display: grid;
-
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-  gap: 30px;
+.hero{
+  background:#006400;
+  color:white;
+  text-align:center;
+  padding:100px 20px;
 }
 
-.card {
-  background: rgba(255,255,255,0.1);
-
-  padding: 30px;
-
-  border-radius: 15px;
+.hero h1{
+  font-size:4rem;
 }
 
-.card h2 {
-  color: gold;
-
-  margin-bottom: 20px;
+.section{
+  padding:70px 10%;
 }
 
-.card p {
-  font-size: 18px;
+.section h2{
+  color:#006400;
+  margin-bottom:20px;
 }
 
-</style>xc
+.placeholder,
+.video-placeholder,
+.image-box{
+  border:3px dashed #999;
+  padding:60px;
+  text-align:center;
+  margin:20px 0;
+  border-radius:10px;
+}
+
+.cards{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.card{
+  flex:1;
+  min-width:250px;
+  background:#f5f5f5;
+  padding:20px;
+  border-radius:10px;
+}
+
+.gallery{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.image-box{
+  flex:1;
+  min-width:250px;
+}
+
+.closing{
+  background:#f5f5f5;
+  text-align:center;
+}
+
+</style>
