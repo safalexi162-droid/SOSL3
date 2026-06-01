@@ -8,6 +8,26 @@
   </head>
   <body>
     <div id="app"></div>
+
+    <div id="google_translate_element" style="display:none"></div>
+    <script>
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'en',
+          includedLanguages: 'fr,rw,es,it',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+      }
+
+      window.changeLanguage = function(lang) {
+        var select = document.querySelector('.goog-te-combo');
+        if (!select) return;
+        select.value = lang;
+        select.dispatchEvent(new Event('change'));
+      };
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

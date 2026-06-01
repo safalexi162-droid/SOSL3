@@ -59,7 +59,7 @@
     <section class="section">
       <h2>Explore Rwanda Through Video</h2>
 <video autoplay muted loop playsinline class="video-bg">
-        <source src="/src/assets/visit rwanda.mp4" />
+        <source  style="cover; width: 200%; height: 200%;" src="/src/assets/visit rwanda.mp4" />
       </video>
       <p>
         Add a promotional tourism video showcasing Rwanda's landscapes,
@@ -111,25 +111,22 @@
       <h2>Beautiful Places to Visit in Rwanda</h2>
 
       <div class="gallery">
+        <div>
+          <img style="width: 180%;height: 180px;" src="/src/assets/vc.jpg"
+        </div>
 
-        <
-          <img src="/src/assets/vc.jpg" 
-          alt="Volcanoes National Park">
-        
+        <div>
+         <img style="width: 180%;height: 180px;" src="/src/assets/aka.jpg"
+          alt="Rwandan king">
+        </div>
 
-        
-          <img src="/src/assets/aka.jpg" 
-          alt="Akagera National Park">
-        
-        
-          <img src="/src/assets/ny.jpg" 
-          alt="Nyungwe Forest">
-          </div>
-        
+        <div>
+          <img style="width: 180%;height: 180px;" src="/src/assets/ny.jpg" 
+          alt="Rwandan ceromony">
+        </div>
+      </div>
 
-      
-
-      <p>
+<p>
         Rwanda is home to some of Africa's most beautiful natural
         attractions. Visitors can enjoy forests, mountains, lakes,
         wildlife, waterfalls, and stunning landscapes.
@@ -139,19 +136,20 @@
     <!-- Lake Kivu -->
     <section class="section">
       <h2>Relax at Lake Kivu</h2>
+ <div class="gallery">
 
-      <div class="gallery">
-
-        <div class="image-box">
-          📷 LAKE KIVU BEACH IMAGE
+        <div>
+          <img style="width: 150%;height: 200px;" src="/src/assets/lk.jpg"
         </div>
 
-        <div class="image-box">
-          📷 SUNSET AT LAKE KIVU
+        <div>
+         <img style="width: 150%;height: 200px;" src="/src/assets/lk2.jpg"
+          alt="Rwandan king">
         </div>
 
-        <div class="image-box">
-          📷 BOATS ON LAKE KIVU
+        <div>
+          <img style="width: 150%;height: 200px;" src="/src/assets/lk3.jpg" 
+          alt="Rwandan ceromony">
         </div>
 
       </div>
@@ -168,8 +166,7 @@
       </p>
     </section>
 
-    <!-- Culture -->
-    <section class="section">
+    
       <h2>Culture and Traditions</h2>
 
       <p>
@@ -180,20 +177,22 @@
 
       <div class="gallery">
 
-        <div class="image-box">
-          📷 CULTURAL DANCE IMAGE
+           <div>
+          <img style="width: 150%;height: 200px;" src="/src/assets/kic.jpg"
         </div>
 
-        <div class="image-box">
-          📷 RWANDAN ART IMAGE
+        <div>
+         <img style="width: 150%;height: 200px;" src="/src/assets/king.jpg"
+          alt="Rwandan king">
         </div>
 
-        <div class="image-box">
-          📷 TRADITIONAL CEREMONY IMAGE
+        <div>
+          <img style="width: 150%;height: 200px;" src="/src/assets/gil.jpg" 
+          alt="Rwandan ceromony">
         </div>
 
       </div>
-    </section>
+    
 
     <!-- Closing -->
     <section class="section closing">
