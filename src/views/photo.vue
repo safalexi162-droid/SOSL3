@@ -4,13 +4,13 @@
     <!-- Hero Section -->
     <section
       class="relative h-[60vh] flex items-center justify-center bg-cover bg-center"
-      style="background-image: url('/images/rwanda-hills.jpg')"
+      style="background-image: url('/src/assets/ruhondo.jpg')"
     >
       <div class="absolute inset-0 bg-black/60"></div>
 
       <div class="relative text-center text-white px-6 max-w-4xl">
         <h1 class="text-5xl font-bold mb-4">
-          Explore Our Tourism Services
+          Explore Our Tourism Gallery
         </h1>
 
         <p class="text-lg md:text-xl">
@@ -24,7 +24,7 @@
     <section class="max-w-7xl mx-auto px-6 py-16">
 
       <h2 class="text-4xl font-bold text-center text-green-700 mb-12">
-        Our Services
+        Our Tourism Gallery
       </h2>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

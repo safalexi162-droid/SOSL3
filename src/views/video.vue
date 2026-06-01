@@ -1,23 +1,42 @@
 <template>
-  <div class="bg-gray-50 min-h-screen">
+  <div class="relative min-h-screen overflow-hidden">
 
-    <!-- Hero Section -->
-    <section
-      class="relative h-[60vh] flex items-center justify-center bg-cover bg-center"
-      style="background-image: url('/images/rwanda-hills.jpg')"
+    <!-- Background Video -->
+    <video
+      autoplay
+      loop
+      controls
+      class="w-full h-screen object-cover"
     >
-      <div class="absolute inset-0 bg-black/60"></div>
+      <source src="/src/assets/visit rwanda.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
 
-      <div class="relative text-center text-white px-6 max-w-4xl">
-        <h1 class="text-5xl font-bold mb-4">
-          Explore Our Tourism Services
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+      <div class="text-center px-6 max-w-4xl">
+
+        <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
+          Discover Rwanda
         </h1>
 
-        <p class="text-lg md:text-xl">
-          Discover Rwanda through unforgettable adventures, cultural
-          experiences, wildlife safaris, and professional travel services.
+        <p class="text-xl md:text-2xl text-gray-200 mb-8">
+          Experience breathtaking landscapes, majestic wildlife,
+          vibrant culture, and unforgettable adventures in the
+          Land of a Thousand Hills.
         </p>
+
+        <button
+          class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition"
+        >
+          Explore Rwanda
+        </button>
+
       </div>
-    </section>
     </div>
+
+  </div>
 </template>
+
+<script setup>
+</script>

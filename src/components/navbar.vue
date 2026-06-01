@@ -11,8 +11,8 @@
         <li class="relative group">
           <a href ="#" class= "hover:text-yellow-300">GALLERY<span>🔽</span></a>
 <ul class="hidden group-hover:block absolute bg-white text-green-900 rounded shadow w-48 mt-2 z-50">
-  <il><a href="photo.vue" class="block px-4 py-2 hover:bg-green-200">PHOTOS</a></il>
-  <il><a href="video.vue" class="block px-4 py-2 hover:bg-green-200">VIDEOS</a></il>
+  <il><a href="photo" class="block px-4 py-2 hover:bg-green-200">PHOTOS</a></il>
+  <il><a href="video" class="block px-4 py-2 hover:bg-green-200">VIDEOS</a></il>
   </ul>
   </li>
         <li class="relative group">

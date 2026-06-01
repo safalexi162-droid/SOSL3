@@ -73,7 +73,7 @@
         <div class="grid md:grid-cols-3 gap-8">
 
           <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg">
-            <img src="/src/assets/kg2.jpg" class="h-64 w-full object-cover">
+            <img src="/src/assets/gn.jpg" class="h-64 w-full object-cover">
             <div class="p-6">
               <h3 class="text-2xl font-bold mb-3">
                 Kigali Genocide Memorial
@@ -97,7 +97,7 @@
           </div>
 
           <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg">
-            <img src="/src/assets/kg1.jpg" class="h-64 w-full object-cover">
+            <img src="/src/assets/kg2.jpg" class="h-64 w-full object-cover">
             <div class="p-6">
               <h3 class="text-2xl font-bold mb-3">
                 Kigali Convention Centre
