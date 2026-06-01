@@ -7,40 +7,32 @@
         <source src="/src/assets/visit rwanda.mp4" />
       </video>
     <section class="hero">
-      <h1>About Rwanda</h1>
+      <h1>{{ $t('about.pageTitle') }}</h1>
       <p>
-        Discover the Heart of Africa and the Land of a Thousand Hills.
+        {{ $t('about.tagline') }}
       </p>
     </section>
 
     <!-- History -->
     <section class="section">
-      <h2>The History of Rwanda</h2>
+      <h2>{{ $t('about.historyTitle') }}</h2>
 
       <p>
-        Rwanda is a beautiful country located in East Africa. Known as
-        the "Land of a Thousand Hills," Rwanda has a rich history,
-        vibrant culture, and breathtaking natural beauty.
+        {{ $t('about.historyP1') }}
       </p>
 
       <p>
-        For centuries, Rwanda was home to thriving communities united
-        through culture, traditions, and strong leadership. Throughout
-        its history, Rwanda has demonstrated resilience and determination.
-        Today, Rwanda stands as one of Africa's fastest-growing nations,
-        recognized globally for cleanliness, security, innovation,
-        environmental conservation, and sustainable development.
+        {{ $t('about.historyP2') }}
       </p>
 
       <p>
-        Modern Rwanda continues to inspire visitors through its remarkable
-        transformation, peaceful environment, and welcoming people.
+        {{ $t('about.historyP3') }}
       </p>
     </section>
 
     
     
-      <h2>Leadership of Rwanda</h2>
+      <h2>{{ $t('about.leadershipTitle') }}</h2>
 
       
         <img src="/src/assets/paul kagame.jpg" 
@@ -50,56 +42,48 @@
         <div></div>
 
       <p>
-        Rwanda's leadership has played an important role in promoting
-        national development, unity, education, technology, tourism,
-        environmental protection, and economic growth.
+        {{ $t('about.leadershipDesc') }}
       </p>
     
     <!-- Rwanda Video -->
     <section class="section">
-      <h2>Explore Rwanda Through Video</h2>
+      <h2>{{ $t('about.videoTitle') }}</h2>
 <video autoplay muted loop playsinline class="video-bg">
-        <source  style="cover; width: 200%; height: 200%;" src="/src/assets/visit rwanda.mp4" />
+        <source src="/src/assets/visit rwanda.mp4" />
       </video>
       <p>
-        Add a promotional tourism video showcasing Rwanda's landscapes,
-        wildlife, culture, cities, and national parks.
+        {{ $t('about.videoDesc') }}
       </p>
     </section>
 
     <!-- Tourism -->
     <section class="section">
-      <h2>Why Visit Rwanda?</h2>
+      <h2>{{ $t('about.tourismTitle') }}</h2>
 
       <p>
-        Rwanda offers unforgettable experiences for every traveler.
-        Whether you are seeking adventure, relaxation, wildlife,
-        photography, or cultural discovery, Rwanda has something unique
-        waiting for you.
+        {{ $t('about.tourismDesc') }}
       </p>
 
       <div class="cards">
 
         <div class="card">
-          <h3>🦍 Gorilla Trekking</h3>
+          <h3>{{ $t('about.gorillaTitle') }}</h3>
           <p>
-            Visit Volcanoes National Park and encounter mountain gorillas
-            in their natural habitat.
+            {{ $t('about.gorillaDesc') }}
           </p>
         </div>
 
         <div class="card">
-          <h3>🌋 Volcanoes</h3>
+          <h3>{{ $t('about.volcanoTitle') }}</h3>
           <p>
-            Explore the magnificent volcanic mountains and hiking trails.
+            {{ $t('about.volcanoDesc') }}
           </p>
         </div>
 
         <div class="card">
-          <h3>🐘 Wildlife</h3>
+          <h3>{{ $t('about.wildlifeTitle') }}</h3>
           <p>
-            Discover lions, elephants, giraffes, zebras, and many other
-            animals in Rwanda's national parks.
+            {{ $t('about.wildlifeDesc') }}
           </p>
         </div>
 

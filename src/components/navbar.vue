@@ -1,44 +1,57 @@
+<script setup>
+import { useI18n } from 'vue-i18n';
+
+const { locale } = useI18n();
+
+const changeLanguage = (lang) => {
+  locale.value = lang;
+  localStorage.setItem('language', lang);
+};
+</script>
+
 <template>
   <nav class="bg-green-800 text-white px-8 py-4 flex items-center justify-between shadow-lg w-full">
     <img src="../assets/image/logo.jpg" alt="Logo" class="h-15 w-15">
-    
+
     <ul class="flex gap-8 text-sm font-medium w-full px-5 justify-end">
-  
-        <li><a href ="/" class="hover:text-yellow-300">HOME</a></li>
-        <li><a href ="/about" class="hover:text-yellow-300">ABOUT</a></li>
-        <li><a href ="/service" class="hover:text-yellow-300">SERVICES</a></li>
-        
-        <li class="relative group">
-          <a href ="#" class= "hover:text-yellow-300">GALLERY<span>🔽</span></a>
-<ul class="hidden group-hover:block absolute bg-white text-green-900 rounded shadow w-48 mt-2 z-50">
-  <il><a href="photo" class="block px-4 py-2 hover:bg-green-200">PHOTOS</a></il>
-  <il><a href="video" class="block px-4 py-2 hover:bg-green-200">VIDEOS</a></il>
-  </ul>
-  </li>
-        <li class="relative group">
-        <li><a href ="#" class="hover:text-yellow-300">DESTINATION<span>🔽</span></a></li>     
-        
-<ul class="hidden group-hover:block absolute bg-white text-green-900 rounded shadow w-48 mt-2 z-50">
-  <il><a href="/northern" class="block px-4 py-2 hover:bg-green-700">NOTHREN PROVINCE</a></il>
-  <il><a href="/southern" class="block px-4 py-2 hover:bg-green-700">SOUTHREN PROVINCE</a></il>
-  <il><a href="/kigalicity" class="block px-4 py-2 hover:bg-green-700">KIGALI CITY PROVINCE</a></il>
-  <il><a href="/eastern" class="block px-4 py-2 hover:bg-green-700">EASTERN PROVINCE</a></il>
+      <li><a href="/" class="hover:text-yellow-300">{{ $t('nav.home') }}</a></li>
+      <li><a href="/about" class="hover:text-yellow-300">{{ $t('nav.about') }}</a></li>
+      <li><a href="/service" class="hover:text-yellow-300">{{ $t('nav.services') }}</a></li>
 
-  </ul>
-  </li>
-        <li><a href ="/contact" class="hover:text-yellow-300">CONCTACT</a></li>
+      <li class="relative group">
+        <a href="#" class="hover:text-yellow-300">{{ $t('nav.gallery') }}<span>🔽</span></a>
+        <ul class="hidden group-hover:block absolute bg-white text-green-900 rounded shadow w-48 mt-2 z-50">
+          <li><a href="photo" class="block px-4 py-2 hover:bg-green-200">{{ $t('nav.photos') }}</a></li>
+          <li><a href="video" class="block px-4 py-2 hover:bg-green-200">{{ $t('nav.videos') }}</a></li>
+        </ul>
+      </li>
 
-        <li class="relative group">
-          <a href ="#" class="hover:text-yellow-300">TRANSLATE<span>🔽</span></a>
-          <ul class="hidden group-hover:block absolute bg-white text-green-900 rounded shadow w-56 mt-2 z-50">
-            <li><button class="w-full text-left px-4 py-2 hover:bg-green-200" onclick="window.changeLanguage('fr')" title="Translate page to French">FRENCH</button></li>
-            <li><button class="w-full text-left px-4 py-2 hover:bg-green-200" onclick="window.changeLanguage('rw')" title="Translate page to Kinyarwanda">KINYARWANDA</button></li>
-            <li><button class="w-full text-left px-4 py-2 hover:bg-green-200" onclick="window.changeLanguage('es')" title="Translate page to Spanish">SPANISH</button></li>
-            <li><button class="w-full text-left px-4 py-2 hover:bg-green-200" onclick="window.changeLanguage('it')" title="Translate page to Italian">ITALIAN</button></li>
-          </ul>
-        </li>  
+      <li class="relative group">
+        <a href="#" class="hover:text-yellow-300">{{ $t('nav.destination') }}<span>🔽</span></a>
+        <ul class="hidden group-hover:block absolute bg-white text-green-900 rounded shadow w-48 mt-2 z-50">
+          <li><a href="/northern" class="block px-4 py-2 hover:bg-green-700">{{ $t('nav.northernProvince') }}</a></li>
+          <li><a href="/southern" class="block px-4 py-2 hover:bg-green-700">{{ $t('nav.southernProvince') }}</a></li>
+          <li><a href="/kigalicity" class="block px-4 py-2 hover:bg-green-700">{{ $t('nav.kigaliCity') }}</a></li>
+          <li><a href="/eastern" class="block px-4 py-2 hover:bg-green-700">{{ $t('nav.easternProvince') }}</a></li>
+          <li><a href="/western" class="block px-4 py-2 hover:bg-green-700">{{ $t('nav.westernProvince') }}</a></li>
+        </ul>
+      </li>
 
+      <li class="relative flex items-center gap-2">
+        <span class="text-sm hover:text-yellow-300">{{ $t('nav.language') }}</span>
+        <select
+          :value="locale"
+          aria-label="Select language"
+          class="bg-green-900 text-white rounded px-2 py-1 border border-white"
+          @change="changeLanguage($event.target.value)"
+        >
+          <option value="en">ENGLISH</option>
+          <option value="fr">FRANÇAIS</option>
+          <option value="rw">KINYARWANDA</option>
+        </select>
+      </li>
 
+      <li><a href="/contact" class="hover:text-yellow-300">{{ $t('nav.contact') }}</a></li>
     </ul>
-    </nav>
+  </nav>
 </template>

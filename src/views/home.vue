@@ -12,28 +12,23 @@
       <div class="overlay"></div>
 
       <div class="hero-content">
-        <h1>Welcome to Tembera u Rwanda</h1>
+        <h1>{{ $t('home.welcomeTitle') }}</h1>
 
         <p>
-          Discover the Land of a Thousand Hills. Explore breathtaking
-          landscapes, encounter mountain gorillas, experience vibrant
-          culture, and create unforgettable memories in Rwanda.
+          {{ $t('home.welcomeDescription') }}
         </p>
 
-        <button class="btn">Explore Rwanda</button>
+        <button class="btn">{{ $t('home.exploreButton') }}</button>
       </div>
 
     </section>
 
     <!-- About Rwanda -->
     <section class="about">
-      <h2>Why Visit Rwanda?</h2>
+      <h2>{{ $t('home.whyVisit') }}</h2>
 
       <p>
-        Rwanda is one of Africa's most beautiful and safest destinations.
-        From Volcanoes National Park and Lake Kivu to the modern city of
-        Kigali, Rwanda offers unique adventures, stunning scenery, and
-        warm hospitality.
+        {{ $t('home.whyVisitDescription') }}
       </p>
     </section>
 
@@ -41,23 +36,23 @@
     <section class="attractions">
 
       <div class="card">
-        <h3>🦍 Gorilla Trekking</h3>
+        <h3>{{ $t('home.gorillaTrekking') }}</h3>
         <p>
-          Experience a once-in-a-lifetime adventure with mountain gorillas.
+          {{ $t('home.gorillaDesc') }}
         </p>
       </div>
 
       <div class="card">
-        <h3>🏞 Beautiful Landscapes</h3>
+        <h3>{{ $t('home.beautifulLandscapes') }}</h3>
         <p>
-          Explore rolling hills, lakes, forests, and breathtaking views.
+          {{ $t('home.landscapesDesc') }}
         </p>
       </div>
 
       <div class="card">
-        <h3>🎭 Rich Culture</h3>
+        <h3>{{ $t('home.richCulture') }}</h3>
         <p>
-          Discover traditional dances, local food, and Rwandan heritage.
+          {{ $t('home.cultureDesc') }}
         </p>
       </div>
 

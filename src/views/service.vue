@@ -4,7 +4,7 @@
     <!-- Hero Section -->
     <section
       class="relative h-[60vh] flex items-center justify-center bg-cover bg-center"
-      style="background-image: url('/images/rwanda-hills.jpg')"
+      style="background-image: url('/src/assets/ny.jpg')"
     >
       <div class="absolute inset-0 bg-black/60"></div>
 

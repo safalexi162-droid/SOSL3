@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <link rel="icon" href="/logo.jpg">
@@ -24,10 +24,14 @@
         var maxAttempts = 20; // ~6 seconds
         var timer = setInterval(function() {
           attempts++;
-          var select = document.querySelector('.goog-te-combo');
+          var select = document.querySelector('select.goog-te-combo') || document.querySelector('#google_translate_element select');
           if (select) {
             select.value = lang;
-            select.dispatchEvent(new Event('change'));
+            var changeEvent = document.createEvent('HTMLEvents');
+            changeEvent.initEvent('change', true, true);
+            select.dispatchEvent(changeEvent);
+            select.dispatchEvent(new Event('change', { bubbles: true }));
+            if (typeof select.blur === 'function') select.blur();
             clearInterval(timer);
             return;
           }
