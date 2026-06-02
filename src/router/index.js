@@ -10,6 +10,8 @@ import western from '../views/western.province.vue';
 import kigalicity from '../views/kigalicityprovince.vue';
 import photo from '../views/photo.vue';
 import video from '../views/video.vue';
+import Login from '../views/Login.vue';
+import Register from '../views/Register.vue';
 const routes = [
     { 
         path:"/",
@@ -69,6 +71,18 @@ const routes = [
         component:video,
     },
         
+        
+   {
+    path:"/Login",
+        name:"Login",
+        component:Login,
+    },
+   {
+    path:"/Register",
+        name:"Register",
+        component:Register,
+    },
+   
 
 
 ]

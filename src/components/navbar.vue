@@ -1,6 +1,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
 
+
 const { locale } = useI18n();
 
 const changeLanguage = (lang) => {
@@ -51,7 +52,9 @@ const changeLanguage = (lang) => {
         </select>
       </li>
 
-      <li><a href="/contact" class="hover:text-yellow-300">{{ $t('nav.contact') }}</a></li>
+      <li><RouterLink to="/contact" class="hover:text-yellow-300">contact us </RouterLink></li>
+     <li><RouterLink to="/Login" class="bg-yellow-400 text-green-900 px-4 py-1 rounded font semibold hover:bg-yellow-300">Login</RouterLink></li>
+    
     </ul>
   </nav>
 </template>

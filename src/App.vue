@@ -1,5 +1,5 @@
 <script setup> 
-import { RouterView } from 'vue-router';
+import { RouterView.useRoute } from 'vue-router';
 import Navbar from './components/navbar.vue'; 
 import Footer from './components/footer.vue';
 </script>
